@@ -1,0 +1,33 @@
+Product Performance & Inventory Analysis — Manager Brief
+Business problem
+Optimize inventory levels and identify product opportunities to reduce stockouts and minimize overstock.
+
+Executive summary
+Analysis of five years of transaction data produced product-level KPIs and time-series exports to support replenishment, promotions, and SKU rationalization. Key outputs include Product_performance_file.csv and monthly_trend.csv for operational use.
+
+Key insights
+Top 20% of products generate ~80% of revenue (ABC Analysis) — focus inventory and promotions on these SKUs.
+15 products flagged as high stockout risk (high coefficient of variation in monthly demand).
+Seasonal patterns detected across 8 product categories — timing-sensitive stocking required.
+12 products showing sustained declining sales (recent 3 months vs prior 3 months).
+Clear fast/slow mover segmentation and wide variation in sales velocity across SKUs.
+Business impact
+Risk of lost sales for high-revenue fast movers if replenishment is not prioritized.
+Working capital tied in slow-moving SKUs that should be considered for consolidation or liquidation.
+Seasonal winners require advance procurement to capture peak demand.
+Recommendations (actionable)
+Prioritize replenishment and reduce lead time for Top 20% and fast-moving SKUs.
+Implement safety-stock and shorter review cycles for the 15 high-risk SKUs.
+Run a promotional pilot on the 12 declining products (test price/promote, monitor 4–8 weeks).
+Liquidate or bundle slow-moving SKUs to free up working capital.
+Build seasonal procurement calendar for the 8 seasonal categories (pre-stock before peaks).
+Operationalize movement-based reorder rules (reorder points, review frequency, target days-of-supply).
+Deliverables included
+Product_performance_file.csv — product KPIs: revenue, quantity, first/last sale, days active, sales velocity, movement category, stockout risk, seasonality score, trend.
+monthly_trend.csv — monthly time-series by product for forecasting and seasonality.
+Suggested KPIs to monitor monthly
+Coverage: % revenue from Top 20 SKUs
+Stockout rate for Top 20 SKUs
+SKUs with high CV (stockout risk)
+% SKUs in decline (3-month trend)
+Days-of-supply by movement category
