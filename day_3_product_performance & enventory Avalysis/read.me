@@ -1,33 +1,60 @@
-Product Performance & Inventory Analysis — Manager Brief
-Business problem
-Optimize inventory levels and identify product opportunities to reduce stockouts and minimize overstock.
+**DAY 3 SUBMISSION**
+
+Product Performance & Inventory Analysis — Project Report
+
+**Project:** Product_Performance_Analysis
+**GitHub Link:** https://github.com/natnaelaster/Daily-exercise/tree/main/day_3_product_performance & enventory Avalysis
+**Tableau Link:** https://public.tableau.com/app/profile/natnael.birhanu/viz/productperformanceanalysis_17625987423580/Dashboard2
 
 Executive summary
-Analysis of five years of transaction data produced product-level KPIs and time-series exports to support replenishment, promotions, and SKU rationalization. Key outputs include Product_performance_file.csv and monthly_trend.csv for operational use.
+Five years of transaction data were analyzed to produce product-level KPIs, time‑series exports and inventory estimates to support replenishment, promotions and SKU rationalization. Outputs available for operational use: product_performance_file.csv, product_performance_enriched.csv, monthly_trend.csv and related exports.
 
-Key insights
-Top 20% of products generate ~80% of revenue (ABC Analysis) — focus inventory and promotions on these SKUs.
-15 products flagged as high stockout risk (high coefficient of variation in monthly demand).
-Seasonal patterns detected across 8 product categories — timing-sensitive stocking required.
-12 products showing sustained declining sales (recent 3 months vs prior 3 months).
-Clear fast/slow mover segmentation and wide variation in sales velocity across SKUs.
-Business impact
-Risk of lost sales for high-revenue fast movers if replenishment is not prioritized.
-Working capital tied in slow-moving SKUs that should be considered for consolidation or liquidation.
-Seasonal winners require advance procurement to capture peak demand.
-Recommendations (actionable)
-Prioritize replenishment and reduce lead time for Top 20% and fast-moving SKUs.
-Implement safety-stock and shorter review cycles for the 15 high-risk SKUs.
-Run a promotional pilot on the 12 declining products (test price/promote, monitor 4–8 weeks).
-Liquidate or bundle slow-moving SKUs to free up working capital.
-Build seasonal procurement calendar for the 8 seasonal categories (pre-stock before peaks).
-Operationalize movement-based reorder rules (reorder points, review frequency, target days-of-supply).
-Deliverables included
-Product_performance_file.csv — product KPIs: revenue, quantity, first/last sale, days active, sales velocity, movement category, stockout risk, seasonality score, trend.
-monthly_trend.csv — monthly time-series by product for forecasting and seasonality.
-Suggested KPIs to monitor monthly
-Coverage: % revenue from Top 20  SKUs
-Stockout rate for Top 20 SKUs
-SKUs with high CV (stockout risk)
-% SKUs in decline (3-month trend)
-Days-of-supply by movement category
+Methods (brief)
+
+Aggregated sales by StockCode/Description to compute Total Revenue and Units Sold.
+Derived Sales Velocity = Units Sold / Days Active (First → Last sale).
+Where cost data exists, computed Profit and Profit Margin.
+Built monthly time series per SKU for turnover, seasonality and trend analysis.
+Estimated safety stock, lead‑time demand, reorder point and EOQ from monthly stats (configurable lead time & service level).
+Flagged stockout risk using coefficient of variation (CV) of monthly demand; identified declining SKUs by comparing last 3 months vs previous 3 months.
+Key results
+
+Revenue & units
+Total Revenue and Units Sold computed per SKU (see product_performance_enriched.csv).
+Profit margin available when Cost is present in source data.
+Top / Bottom performers
+Top 10 SKUs by revenue exported (top_10_products_by_revenue.csv).
+Bottom 10 positive‑revenue SKUs exported (bottom_10_products_by_revenue.csv).
+Small set of SKUs drives a large share of revenue (ABC effect; top ~20% ≈ 80% of revenue).
+Sales velocity & movement
+Sales_velocity computed (units/day) and SKUs bucketed into Slow / Medium / Fast movement for differentiated replenishment rules.
+Inventory analysis
+Inventory turnover (units-based) estimated where OnHand exists: AnnualUnits / AvgOnHand (inventory_turnover_by_product.csv).
+SafetyStock and ReorderPoint computed from AvgDailySales and demand volatility; EOQ included when cost parameters supplied (inventory_estimates_by_product.csv).
+Stockout risk
+3‑tier stockout_risk flags generated from CV of monthly demand (low / medium / high) — high CV SKUs need safety stock/shorter review cycles (stockout_risk_by_product.csv).
+Seasonality & trends
+Seasonality score (low/medium/high) from monthly std; 8 categories show clear seasonal patterns (seasonal_products.csv).
+12 SKUs identified as Decline by 3‑month vs prior 3‑month comparison (declining_products.csv).
+monthly_trend.csv contains the monthly series for forecasting and visualization.
+Operational implications
+
+Prioritize replenishment and lead‑time reduction for fast movers and Top‑A SKUs to avoid lost sales.
+Increase safety stock or shorten review cycles for high CV SKUs (stockout risk).
+Run 4–8 week promotional tests on declining SKUs; consider bundling/liquidation if no recovery.
+Use movement buckets to set review cadence: Fast = daily/weekly, Medium = weekly, Slow = monthly/quarterly.
+Align procurement calendar with seasonal SKU peaks.
+Deliverables (ready)
+
+product_performance_file.csv (SKU KPIs + risk/seasonality/trend)
+product_performance_enriched.csv (extended metrics incl. Sales_velocity, ABC class)
+monthly_trend.csv (time series by SKU)
+top_10_products_by_revenue.csv / bottom_10_products_by_revenue.csv
+inventory_estimates_by_product.csv (safety stock, reorder point, EOQ)
+inventory_turnover_by_product.csv (if OnHand available)
+stockout_risk_by_product.csv, seasonal_products.csv, declining_products.csv
+Recommended next actions (prioritized)
+
+Pilot movement‑based reorder rules for top 50 SKUs (produce suggested reorder points).
+Approve small promotional budget for a 10–12 SKU decline‑recovery test.
+Build a seasonal procurement calendar for identified categories and schedule monthly refresh of exports.
