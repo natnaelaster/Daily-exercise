@@ -1,4 +1,4 @@
--- Create database called (supply_&_chain_dashboard)
+-- Create database called (hr_analytics)
 create database `hr_analytics`;
 use `hr_analytics`;
 -- ------------------------------------------------------------------------------------------------------
