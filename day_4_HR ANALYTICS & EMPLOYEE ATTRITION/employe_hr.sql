@@ -92,6 +92,44 @@ SELECT
     
 -- ---------------------------------------------------------------------------------------
 
--- 4     
+-- 4 JOB SATISFACTION IMPACT    
 
-		
+SELECT 
+    JobSatisfaction,
+    COUNT(*) as EMPLOYEE_COUNT,
+    SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) as ATTRITION_COUNT,
+    ROUND((SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) / COUNT(*) * 100), 2) as ATTRITION_RATE
+FROM employees
+GROUP BY JobSatisfaction
+ORDER BY JobSatisfaction;
+
+-- ---------------------------------------------------------------------------------------
+
+-- 5 GROUP AGE ANALYSIS
+
+SELECT 
+	CASE
+    WHEN Age < 25 THEN 'UNDER 25'
+    WHEN Age > 25 AND Age < 34 THEN 'BETWEEN 25-34'
+    WHEN Age > 35 AND Age < 44 THEN 'BETWEEN 34-45'
+    WHEN Age > 45 AND Age < 54 THEN 'BETWEEN 45-54'
+    ELSE 'OLDER THAN 54' END AS AGE_GROUP,
+    COUNT(*) EMPLOYEE_COUNT,
+    SUM(CASE WHEN Attrition = 'YES' THEN 1 ELSE 0 END) AS ATTRITION_COUNT,
+    ROUND(SUM(CASE WHEN Attrition = 'YES' THEN 1 ELSE 0 END) / COUNT(*) * 100, 2) AS ATTRITION_RATE
+    FROM employees
+    GROUP BY AGE_GROUP
+    ORDER BY AGE_GROUP DESC;
+    
+-- ---------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
