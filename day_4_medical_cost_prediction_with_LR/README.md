@@ -1,5 +1,5 @@
 # Medical Cost Prediction with Linear Regression
-
+### DAY 4 SUBMISSION (Python + SKLEARN)
 ## Project Description
 This project aims to predict individual medical costs for health insurance using machine learning techniques. By analyzing demographic and lifestyle factors, I build a predictive model to estimate insurance charges, helping insurers assess risk and set premiums more accurately.
 
