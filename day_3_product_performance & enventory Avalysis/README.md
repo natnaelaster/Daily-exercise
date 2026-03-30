@@ -2,7 +2,9 @@
 (Python + Tableau)
 
 **Project:** Product_Performance_Analysis
+
 **GitHub Link:** https://github.com/natnaelaster/Daily-exercise/tree/main/day_3_product_performance & enventory Avalysis
+
 **Tableau Link:** https://public.tableau.com/app/profile/natnael.birhanu/viz/productperformanceanalysis_17625987423580/Dashboard2
 
 Executive summary
