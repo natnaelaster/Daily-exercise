@@ -1,5 +1,5 @@
-
 📊 Data Analysis Portfolio: From Self-Taught to Data Analyst
+
 🚀 About This Repository
 This repository documents my intensive, self-directed journey to becoming a Data Analyst. Over [X] months, I've completed daily analytical challenges across multiple domains—from sales and customer analytics to supply chain optimization—building a comprehensive skill set through hands-on projects.
 
