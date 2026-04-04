@@ -200,6 +200,7 @@ Missing Values by Feature:
 ## 📁 Files in This Project
 - `web_scraping.ipynb` - Main analysis notebook
 - `jumia_products.csv` - Raw scraped data
+- `cleaned_jumia_products.csv` - cleaned data after scraping
 - `README.md` - This documentation file
 
 ## ⏱️ Time Investment
