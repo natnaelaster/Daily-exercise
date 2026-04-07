@@ -128,38 +128,6 @@ Missing Values by Feature:
 - Unrealistic hardware specifications
 - Encoding issues in scraped text
 
-## 📋 Process Steps Summary
-
-1. **Web Scraping Setup**
-   - Import required libraries (requests, BeautifulSoup, pandas)
-   - Define scraping function with headers for user-agent
-   - Implement pagination loop (50 pages)
-
-2. **Data Extraction**
-   - Parse HTML for product information
-   - Extract name, price, old_price, discount
-   - Store in pandas DataFrame
-
-3. **Data Cleaning Pipeline**
-   - Currency conversion and text cleaning
-   - Data type conversions
-   - Outlier removal and validation
-
-4. **Feature Extraction**
-   - Regex pattern matching for specifications
-   - Storage unit conversions (TB to GB)
-   - Categorical feature creation
-
-5. **Data Analysis**
-   - Statistical summaries and groupings
-   - Correlation analysis
-   - Visualization creation
-
-6. **Results Interpretation**
-   - Price pattern identification
-   - Market segmentation insights
-   - Business implications
-
 ## 🎯 Conclusion
 
 ### Technical Achievements
@@ -174,24 +142,12 @@ Missing Values by Feature:
 - **Pricing Strategy:** SSD premium pricing indicates value perception
 - **Market Opportunity:** Broad price range suggests diverse consumer segments
 
-### Key Takeaways
-1. **Data Collection:** Web scraping provides real-time market intelligence
-2. **Feature Engineering:** Regex parsing effectively extracts structured data from unstructured text
-3. **Market Analysis:** Hardware specifications strongly influence laptop pricing
-4. **Data Quality:** Rigorous cleaning ensures reliable analysis results
-
 ### Recommendations
 - **For Retailers:** Focus on RAM and SSD as key selling points
 - **For Consumers:** Clear understanding of specification-value relationships
 - **For Analysts:** Web scraping + feature extraction = powerful market research tool
 
-### Future Enhancements
-- Expand to multiple marketplaces for comparative analysis
-- Include additional specifications (screen size, battery life)
-- Implement time-series analysis for price trends
-- Add competitor price comparison features
-
-## 🛠️ Technologies Used
+## 🛠️ Tools Used
 - **Python Libraries:** pandas, numpy, matplotlib, seaborn, requests, BeautifulSoup, re
 - **Data Processing:** Regex pattern matching, data cleaning pipelines
 - **Analysis:** Statistical analysis, correlation studies
@@ -203,12 +159,12 @@ Missing Values by Feature:
 - `cleaned_jumia_products.csv` - cleaned data after scraping
 - `README.md` - This documentation file
 
-## ⏱️ Time Investment
+## ⏱️ Total time spent
 - **Web Scraping:** 2 hours
 - **Data Cleaning:** 3 hours
 - **Feature Extraction:** 2 hours
 - **Analysis & Visualization:** 2 hours
 - **Documentation:** 1 hour
-- **Total:** 10 hours
+- **Total:** 10 hours in defferent 3 days
 
 ---
