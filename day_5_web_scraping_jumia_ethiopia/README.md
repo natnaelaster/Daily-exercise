@@ -1,12 +1,12 @@
 # 💻 Web Scraping & Laptop Market Analysis (Jumia Uganda) (Day 5)
 
 ## Project Overview
-This project I have demonstrated web scraping techniques to collect real-time laptop pricing data from Jumia Uganda marketplace, followed by comprehensive data cleaning, feature extraction, and market analysis to understand pricing determinants and consumer preferences in the Ugandan laptop market.
+In this project I have demonstrated web scraping techniques to collect real-time laptop pricing data from Jumia Uganda marketplace, followed by comprehensive data cleaning, feature extraction, and market analysis to understand pricing determinants and consumer preferences in the Ugandan laptop market.
 
 ## 🎯 Objective
-I have Analyze laptop market dynamics by scraping product data from Jumia Uganda to identify pricing patterns, hardware specifications impact on pricing, and market segmentation based on product features.
+I have Analyzed laptop market dynamics by scraping product data from Jumia Uganda to identify pricing patterns, hardware specifications impact on pricing, and market segmentation based on product features.
 
-## 📊 Data Source
+## 📊 The Data Source
 - **Platform:** Jumia Uganda (jumia.ug)
 - **Section:** Laptops category
 - **Collection Method:** Web scraping using Python (BeautifulSoup, requests)
@@ -17,53 +17,53 @@ I have Analyze laptop market dynamics by scraping product data from Jumia Uganda
   - Old/discounted prices (in UGX)
   - Discount percentages
 
-## 🔧 Data Cleaning Process
+## 🔧 Data Cleaning Process (Stage 1)
 
-### 1. Initial Data Collection
+### 1. Initially Collecting data
 - Scraped 50 pages of laptop listings
 - Handled pagination and rate limiting (1-second delays between requests)
 - Extracted product information using CSS selectors
 
-### 2. Text and Currency Cleaning
-- **Currency Conversion:** Converted UGX to USD using exchange rate (1 USD = 3,750 UGX)
+### 2. Cleaning Text and Currency from price columns
+- **Currency Conversion:** Converted (UGX) to (USD) using exchange rate (1 USD = 3,750 UGX)
 - **Price Cleaning:**
-  - Removed 'UGX' currency symbols
-  - Stripped commas and special characters
-  - Converted string prices to float data types
-- **Data Type Standardization:** Ensured numeric columns were properly typed
+  - Removed the 'UGX' currency symbols
+  - Stripped commas and also special characters
+  - Converted the price datatype from (string) to (float)
+- **Data Type Standardization:** I have ensured numeric columns were properly typed
 
-### 3. Data Filtering and Validation
+### 3. Filtering and Validation of Data
 - Removed products with invalid price data (containing '-' characters)
-- Filtered out unrealistic specifications (>100GB RAM)
-- Dropped rows with missing critical values (RAM, storage, storage type)
+- Filtered out unrealistic specifications like (>100GB RAM)
+- Dropped rows with missing critical values like (RAM, storage, storage type)
 
-### 4. Feature Extraction from Product Titles
-Used regex-based parsing to extract hardware specifications:
+### 4. Extracting Feature from Product Titles
+I have used regex-based parsing to extract hardware specifications:
 - **RAM:** Patterns like "8GB RAM", "16GB RAM"
 - **Storage:** Patterns like "256GB", "512GB", "1TB" (converted TB to GB)
 - **Storage Type:** Identified "SSD" or "HDD" mentions
 - **CPU:** Extracted Intel (i3, i5, i7) and AMD Ryzen variants
-- **Model/Brand:** Attempted extraction but dropped due to high missing values
+- **Model/Brand:** Attempted extraction but dropped due to (high missing values)
 
 ### 5. Data Quality Assurance
 - Checked for missing values across all extracted features
 - Removed columns with excessive missing data (>50% missing)
 - Final dataset: Cleaned and filtered laptop specifications
 
-## 📈 Analysis Process
+## 📈 Analysis Process (Stage 2)
 
-### Step 1: Exploratory Data Analysis
-- **Descriptive Statistics:** Summary statistics for price distributions
-- **Data Overview:** Understanding the dataset structure and completeness
+### Step 1: Exploratory Data Analysis (EDA)
+- **Descriptive Statistics:** I have used summary statistics for price distributions
+- **Data Overview:** Understand the dataset structure and completeness
 
 ### Step 2: Feature Engineering
-- Created USD price columns for analysis
-- Categorized products by RAM capacity, storage size, and type
-- Prepared data for grouping and aggregation
+- I have created (USD) price columns for analysis
+- categorized products by (RAM capacity, storage size, and type)
+- and prepared data for grouping and aggregation
 
 ### Step 3: Statistical Analysis
-- **Price Analysis by RAM:** Grouped by RAM size to analyze average prices
-- **Price Analysis by Storage Type:** Compared SSD vs HDD pricing
+- **(Price by RAM) Analysis:** grouped price by RAM size to analyze average prices
+- **(Price by Storage Type) Analysis:** compared SSD vs HDD pricing
 - **Correlation Analysis:** Examined relationships between specifications and pricing
 
 ### Step 4: Visualization
