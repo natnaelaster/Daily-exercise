@@ -109,19 +109,8 @@ Price Statistics (USD):
 ## 🔍 Data Cleaning Details
 
 ### Missing Values Handling
-```
-Original Dataset: ~1,000+ products
-After Cleaning: ~800 products
 
-Missing Values by Feature:
-- RAM: 15% missing (dropped rows)
-- Storage: 12% missing (dropped rows)
-- Storage Type: 18% missing (dropped rows)
-- CPU: 45% missing (dropped column)
-- Model: 60% missing (dropped column)
-```
-
-### Data Quality Issues Resolved
+#### Data Quality Issues Resolved
 - Inconsistent product naming conventions
 - Mixed currency formats
 - Special characters in price strings
