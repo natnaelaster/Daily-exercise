@@ -24,6 +24,8 @@ This repository showcases my journey in data analysis through daily hands-on pro
 
 ### 5. 💻 Web Scraping & Laptop Market Analysis (Day 5)
 
+### 6. 💻 HubSpot CRM Sales Analytics (Day 6)
+
 ## 🛠️ Technical Stack & Skills Demonstrated
 
 **Programming & Analysis:**
