@@ -84,7 +84,8 @@ from hubspot_crm_data
 group by monthes
 order by monthes;
 
-
+-- <<<<<<<<<<<<<<<<<<<< END OF THE DATA ANALYSIS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-- <<<<<<<<<<<<<<<<<<<< NEXT DATA VISUALIZATION WITH POWER BI >>>>>>>>>>>>>>>>>>>
 
 
 
