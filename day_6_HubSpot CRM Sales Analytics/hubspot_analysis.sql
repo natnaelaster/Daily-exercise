@@ -38,11 +38,12 @@ sum(case when Deal_stage = 'Won' then 1 else 0 end) as Won_deal,
 round(sum(case when Deal_stage = 'Won' then 1 else 0 end)*100/count(*), 2) as Won_rate 
 from hubspot_crm_data
 group by Sales_agent
-order by Won_deal;
+order by Won_rate;
 
 -- Average Deal Size
 select Deal_stage, round(avg(Close_value), 2) as average_deal_size
 from hubspot_crm_data
+where Deal_stage = 'Won'
 group by Deal_stage
 order by average_deal_size desc;
 
@@ -73,9 +74,9 @@ group by Regional_office, Office
 order by revenue_by_regional_office desc;
 
 -- Company Size Analysis
-select Company, count(Employees), round(sum(close_value), 2) as revenue_by_company_size
+select Company_name, count(Employees), round(sum(close_value), 2) as revenue_by_company_size
 from hubspot_crm_data
-group by Company
+group by Company_name
 order by revenue_by_company_size desc;
 
 -- Monthly Revenue Trends
@@ -100,5 +101,3 @@ order by monthes;
 
 
 
-
--- End of SQL script for HubSpot CRM Sales Analytics

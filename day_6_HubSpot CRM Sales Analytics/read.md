@@ -21,25 +21,83 @@ SQL, Power BI, Python
 ✅ hubspot_analysis.sql 
 - Data analysis and insight 
 
+## Project Overview
 
- **Objective**
+This project analyzes HubSpot CRM sales data to gain insights into sales performance, agent effectiveness, product profitability, and regional trends. The analysis involves data exploration, cleaning, merging multiple datasets, and performing SQL-based queries to extract key metrics.
 
+## Data Sources
 
+The analysis uses the following CSV files:
+- **accounts.csv**: Contains company details including name, sector, revenue, employees, office location, and year established.
+- **data_dictionary.csv**: Provides explanations for columns in other CSV files.
+- **products.csv**: Lists products with names, series, and sales prices.
+- **sales_pipeline.csv**: Tracks sales deals with opportunity ID, account, product, sales agent, deal stage, engage date, close date, and close value.
+- **sales_teams.csv**: Information about sales agents and their regional offices.
 
-Analyze sales pipeline performance using SQL and Power BI.
+## Methodology
 
-Tools
+1. **Data Exploration**: Initial examination of each dataset to understand structure, data types, and content.
+2. **Data Merging**: Combined sales_pipeline with accounts, products, and sales_teams using left joins on common keys.
+3. **Data Cleaning**: 
+   - Dropped unnecessary columns (e.g., subsidiary_of)
+   - Renamed columns for consistency
+   - Converted data types (dates to datetime, numeric fields to float/int)
+   - Handled missing values and duplicates
+   - Filtered out invalid records (e.g., products without sales price)
+4. **Data Export**: Exported cleaned data to MySQL database for analysis.
+5. **SQL Analysis**: Performed various queries to calculate KPIs and generate insights.
+6. **Visualization**: Planned dashboard creation in Power BI (link not provided yet).
 
-SQL, Power BI, Excel
+## Key Insights
 
-KPIs
+### Overall Performance
+- **Total Revenue**: $6,000,000 from won deals
+- **Win Rate**: 57% of all deals were successfully closed
 
-Revenue, Win Rate, Deal Size, Sales Cycle
+### Sales Agent Performance
+- **Top Win Rates**:
+  - Hayden Neloms: 64.4%
+  - Reed Clapper: 64.9%
+  - Wilburn Farren: 67%
+- **Sales Cycle Length**: Cecily Lampkin has the shortest average sales cycle at 38 days
 
-Key Findings
+### Product Analysis
+- **Average Deal Size**: $1,850 for won deals
+- **Revenue by Product**: 
+  - MG Advanced: $2.2M (37% of total revenue)
+  - Other products contribute varying amounts to the remaining revenue
 
-(write 5 bullet insights)
+### Industry and Regional Insights
+- **Revenue by Industry**: Retailing sector leads with $1.2M in sales
+- **Regional Sales**:
+  - West: $2.2M
+  - Central: $1.6M
+  - East: $1.5M
 
-Dashboard Screenshot
+### Additional Metrics
+- **Company Size Analysis**: Revenue distribution across different company sizes
+- **Monthly Revenue Trends**: Seasonal patterns in sales performance
 
-(add image)
+## Files Description
+
+- **hubspot_explore.ipynb**: Jupyter notebook for initial data exploration
+- **hubspot_merge.ipynb**: Data merging, cleaning, and MySQL export
+- **hubspot_analysis.sql**: SQL queries for data analysis and insights
+- **hubspot_merge_file.csv**: Raw merged data
+- **hubspot_clean_file.csv**: Cleaned and processed data
+- **README.md**: This documentation file
+
+## Tools and Technologies
+
+- **Python**: Data manipulation with pandas, numpy
+- **MySQL**: Database storage and querying
+- **SQLAlchemy**: Python-MySQL connection
+- **Power BI**: Planned for data visualization and dashboard creation
+- **Jupyter Notebook**: Interactive development environment
+
+## Future Enhancements
+
+- Complete Power BI dashboard development
+- Implement predictive analytics for deal win probability
+- Add time-series forecasting for revenue projections
+- Integrate real-time data updates
