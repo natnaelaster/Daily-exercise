@@ -1,9 +1,42 @@
-The leadership team wants to understand:
+**DAY 6 SUBMISSION** 
+(Python + MYSQL + Power BI)
 
-Which sales agents perform best
-Which products generate the most revenue
-How long deals take to close
-Which industries and regions create the highest value customers
-Where the sales pipeline loses opportunities
+**Project:** CRM Sales Analytics Dashboard
 
-Your task is to transform raw CRM opportunity data into actionable business insights using SQL + Power BI.
+**GitHub Link:** https://github.com/natnaelaster/Daily-exercise/tree/main/day_1_sales_analysis
+
+**Power_BI Link:** 
+
+**Tools**
+SQL, Power BI, Python
+
+**Completed:**
+✅ Hubspot_explore.ipynb 
+- Data exploration and property description 
+✅ hubspot_merge.ipynb:-
+- Data cleaning, merging and sql connection to export data 
+✅ hubspot_analysis.sql 
+- Data analysis and insight 
+
+
+ **Objective**
+
+
+
+Analyze sales pipeline performance using SQL and Power BI.
+
+Tools
+
+SQL, Power BI, Excel
+
+KPIs
+
+Revenue, Win Rate, Deal Size, Sales Cycle
+
+Key Findings
+
+(write 5 bullet insights)
+
+Dashboard Screenshot
+
+(add image)

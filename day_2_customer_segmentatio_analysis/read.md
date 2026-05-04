@@ -2,6 +2,7 @@
 (Python + Tableau)
 
 **Project:** Customer Behavior Analysis
+
 **GitHub Link:** https://github.com/natnaelaster/Daily-exercise/tree/main/day_2_customer_segmentatio_analysis
 
 **Tableau Link:** https://public.tableau.com/app/profile/natnael.birhanu/viz/day_2_customer_segmentation/Dashboard1
