@@ -7,8 +7,7 @@
 
 **Power_BI Link:** 
 
-**Tools**
-SQL, Power BI, Python
+**Tools**  SQL, Power BI, Python
 
 **Completed:**
 
@@ -46,7 +45,7 @@ The analysis uses the following CSV files:
    - Filtered out invalid records (e.g., products without sales price)
 4. **Data Export**: Exported cleaned data to MySQL database for analysis.
 5. **SQL Analysis**: Performed various queries to calculate KPIs and generate insights.
-6. **Visualization**: Planned dashboard creation in Power BI (link not provided yet).
+6. **Visualization**: Planned dashboard creation in Power BI.
 
 ## Key Insights
 
@@ -70,9 +69,9 @@ The analysis uses the following CSV files:
 ### Industry and Regional Insights
 - **Revenue by Industry**: Retailing sector leads with $1.2M in sales
 - **Regional Sales**:
-  - West: $2.2M
-  - Central: $1.6M
-  - East: $1.5M
+  - United State_West: $2.2M
+  - United State_Central: $1.6M
+  - United State_East: $1.5M
 
 ### Additional Metrics
 - **Company Size Analysis**: Revenue distribution across different company sizes
@@ -87,17 +86,3 @@ The analysis uses the following CSV files:
 - **hubspot_clean_file.csv**: Cleaned and processed data
 - **README.md**: This documentation file
 
-## Tools and Technologies
-
-- **Python**: Data manipulation with pandas, numpy
-- **MySQL**: Database storage and querying
-- **SQLAlchemy**: Python-MySQL connection
-- **Power BI**: Planned for data visualization and dashboard creation
-- **Jupyter Notebook**: Interactive development environment
-
-## Future Enhancements
-
-- Complete Power BI dashboard development
-- Implement predictive analytics for deal win probability
-- Add time-series forecasting for revenue projections
-- Integrate real-time data updates
