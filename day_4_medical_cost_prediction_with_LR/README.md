@@ -62,4 +62,3 @@ The model shows significant improvement over the baseline, with lower MAE on bot
 ## Files
 - `insurance_cost_prediction.ipynb`: Main analysis notebook
 - `insurance.csv`: Dataset
-- `README.md`: This file
