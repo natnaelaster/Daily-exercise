@@ -7,7 +7,7 @@
 
 **Tableau Link:** https://public.tableau.com/app/profile/natnael.birhanu/viz/productperformanceanalysis_17625987423580/Dashboard2
 
-Executive summary
+** Executive summary
 I have analyzed five years of transaction data to produce: 
     -product-level KPIs, time‑series exports and inventory estimates to support replenishment, promotions and SKU rationalization. 
 
