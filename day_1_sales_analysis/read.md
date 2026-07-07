@@ -107,14 +107,14 @@ Returned orders (negative quantities) represent **more than 2% of all transactio
 * Matplotlib
 * Jupyter Notebook
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-* ![Tableau](https://img.shields.io/badge/Tableau-4479A1?style=flat&logo=Tableau&logoColor=white)
+* ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 * ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
 ---
 
 # 📊 Dashboard Preview
 
-![Dashboard]    ===<img src="Screenshot (11).png" width="900">
+![Dashboard]<img src="Screenshot (1).png" width="900">
 
 ---
 
@@ -140,3 +140,6 @@ https://public.tableau.com/views/day_1_sales_dashboard/SalesPerformanceDashboard
 ## 📬 Let's Connect
 
 If you're interested in data analytics, dashboard development, or business intelligence solutions, feel free to connect with me on LinkedIn or explore more projects in my portfolio.
+
+*[Connect on LinkedIn](your-linkedin-url) or 
+[view my portfolio](your-portfolio-url)*
