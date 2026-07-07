@@ -115,5 +115,7 @@ Five CSV files from HubSpot CRM:
 *[Connect on LinkedIn](your-linkedin-url) or 
 [view my portfolio](your-portfolio-url)*
 
-CRM Dashboard
+# CRM Sales Analytics Dashboard
+
+![Dashboard](Screenshot (11).png)
 
