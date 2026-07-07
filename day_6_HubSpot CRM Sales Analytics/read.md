@@ -117,5 +117,4 @@ Five CSV files from HubSpot CRM:
 
 # CRM Sales Analytics Dashboard
 
-![Dashboard](Screenshot (11).png)
-
+![Dashboard] <img src="Screenshot (11).png" width="900">
