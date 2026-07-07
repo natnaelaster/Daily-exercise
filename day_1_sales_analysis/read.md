@@ -100,12 +100,8 @@ Returned orders (negative quantities) represent **more than 2% of all transactio
 
 # 🛠️ Tools Used
 
-* Python
-* Pandas
-* NumPy
-* Tableau
-* Matplotlib
-* Jupyter Notebook
+* ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)
+* ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 * ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 * ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
