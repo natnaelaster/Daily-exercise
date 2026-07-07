@@ -1,87 +1,119 @@
 **DAY 6 SUBMISSION** 
 (Python + MYSQL + Power BI)
 
-**Project:** CRM Sales Analytics Dashboard
+# CRM Sales Analytics — HubSpot Pipeline Analysis
+### Python · SQL · Power BI | Sales Performance Intelligence
 
-**GitHub Link:** https://github.com/natnaelaster/Daily-exercise/tree/main/day_6_HubSpot%20CRM%20Sales%20Analytics
+---
 
-**Power_BI Link:** 
+## The Business Problem
 
-**Tools**  SQL, Power BI, Python
+A sales organization needed clear answers to questions their 
+data wasn't answering:
 
-**Completed:**
+- Which sales agents are actually closing deals efficiently?
+- Which products drive the most revenue?
+- Where are deals being lost in the pipeline?
+- Which regions and industries are underperforming?
 
-✅ Hubspot_explore.ipynb 
-- Data exploration and property description 
+This project takes raw HubSpot CRM data across 5 datasets 
+and turns it into a complete sales intelligence system.
 
-✅ hubspot_merge.ipynb
-- Data cleaning, merging and sql connection to export data 
+---
 
-✅ hubspot_analysis.sql 
-- Data analysis and insight 
+## Key Results
 
-## Project Overview
+| Metric | Finding |
+|---|---|
+| Total Revenue Analyzed | $6,000,000 (won deals) |
+| Overall Win Rate | 57% |
+| Top Performing Agent | Wilburn Farren — 67% win rate |
+| Shortest Sales Cycle | Cecily Lampkin — 38 days avg |
+| Top Product | MG Advanced — $2.2M (37% of revenue) |
+| Top Region | US West — $2.2M |
+| Top Industry | Retailing — $1.2M |
 
-This project analyzes HubSpot CRM sales data to gain insights into sales performance, agent effectiveness, product profitability, and regional trends. The analysis involves data exploration, cleaning, merging multiple datasets, and performing SQL-based queries to extract key metrics.
+---
+
+## What Was Built
+
+**1. Python Data Pipeline**
+- Merged 5 raw CSV datasets (sales pipeline, accounts, 
+  products, sales teams, data dictionary)
+- Cleaned inconsistent data types, renamed columns, 
+  handled missing values and duplicates
+- Exported structured data to MySQL for analysis
+
+**2. SQL Analysis Layer**
+- Win rate by sales agent
+- Revenue by product, industry, and regional office
+- Average deal size and sales cycle length
+- Monthly revenue trends
+
+**3. Power BI Dashboard**
+- KPI cards: total revenue, win rate, average deal size
+- Sales rep performance ranking
+- Deal stage funnel (where prospects drop off)
+- Revenue trend by month
+- Regional and industry breakdown
+- Interactive filters by manager, region, product, time
+
+---
+
+## Key Business Insights
+
+**Agent Performance Gap is significant**
+Win rates range from the low 50s to 67% across agents — 
+a 15+ point spread that suggests coaching opportunities 
+for lower performers based on what top agents do differently.
+
+**Revenue is heavily concentrated**
+One product (MG Advanced) generates 37% of all revenue. 
+One region (US West) generates the largest share. 
+This concentration is both a strength and a risk.
+
+**Sales cycle varies widely by agent**
+The fastest agent closes in 38 days average. 
+Identifying what the fastest closers do differently 
+could reduce the overall sales cycle across the team.
+
+---
+
+## Project Files
+
+| File | Purpose |
+|---|---|
+| `Hubspot_explore.ipynb` | Data exploration and structure analysis |
+| `hubspot_merge.ipynb` | Data cleaning, merging, MySQL export |
+| `hubspot_analysis.sql` | SQL queries for all KPI calculations |
+
+---
+
+## Tools Used
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+
+---
 
 ## Data Sources
 
-The analysis uses the following CSV files:
-- **accounts.csv**: Contains company details including name, sector, revenue, employees, office location, and year established.
-- **data_dictionary.csv**: Provides explanations for columns in other CSV files.
-- **products.csv**: Lists products with names, series, and sales prices.
-- **sales_pipeline.csv**: Tracks sales deals with opportunity ID, account, product, sales agent, deal stage, engage date, close date, and close value.
-- **sales_teams.csv**: Information about sales agents and their regional offices.
+Five CSV files from HubSpot CRM:
+- `sales_pipeline.csv` — deal tracking with stages, 
+   dates, and close values
+- `accounts.csv` — company details, sector, revenue, 
+   employee count
+- `products.csv` — product catalog with pricing
+- `sales_teams.csv` — agent and regional office mapping
+- `data_dictionary.csv` — column definitions
 
-## Methodology
+---
 
-1. **Data Exploration**: Initial examination of each dataset to understand structure, data types, and content.
-2. **Data Merging**: Combined sales_pipeline with accounts, products, and sales_teams using left joins on common keys.
-3. **Data Cleaning**: 
-   - Dropped unnecessary columns (e.g., subsidiary_of)
-   - Renamed columns for consistency
-   - Converted data types (dates to datetime, numeric fields to float/int)
-   - Handled missing values and duplicates
-   - Filtered out invalid records (e.g., products without sales price)
-4. **Data Export**: Exported cleaned data to MySQL database for analysis.
-5. **SQL Analysis**: Performed various queries to calculate KPIs and generate insights.
-6. **Visualization**: Planned dashboard creation in Power BI.
+*Interested in a similar analysis for your business?*
+*[Connect on LinkedIn](your-linkedin-url) or 
+[view my portfolio](your-portfolio-url)*
 
-## Key Insights
+CRM Dashboard
 
-### Overall Performance
-- **Total Revenue**: $6,000,000 from won deals
-- **Win Rate**: 57% of all deals were successfully closed
-
-### Sales Agent Performance
-- **Top Win Rates**:
-  - Hayden Neloms: 64.4%
-  - Reed Clapper: 64.9%
-  - Wilburn Farren: 67%
-- **Sales Cycle Length**: Cecily Lampkin has the shortest average sales cycle at 38 days
-
-### Product Analysis
-- **Average Deal Size**: $1,850 for won deals
-- **Revenue by Product**: 
-  - MG Advanced: $2.2M (37% of total revenue)
-  - Other products contribute varying amounts to the remaining revenue
-
-### Industry and Regional Insights
-- **Revenue by Industry**: Retailing sector leads with $1.2M in sales
-- **Regional Sales**:
-  - United State_West: $2.2M
-  - United State_Central: $1.6M
-  - United State_East: $1.5M
-
-### Additional Metrics
-- **Company Size Analysis**: Revenue distribution across different company sizes
-- **Monthly Revenue Trends**: Seasonal patterns in sales performance
-
-## Files Description
-
-- **hubspot_explore.ipynb**: Jupyter notebook for initial data exploration
-- **hubspot_merge.ipynb**: Data merging, cleaning, and MySQL export
-- **hubspot_analysis.sql**: SQL queries for data analysis and insights
-- **hubspot_merge_file.csv**: Raw merged data
-- **hubspot_clean_file.csv**: Cleaned and processed data
-- **README.md**: This documentation file
