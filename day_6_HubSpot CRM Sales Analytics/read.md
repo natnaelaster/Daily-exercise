@@ -112,7 +112,7 @@ Five CSV files from HubSpot CRM:
 ---
 
 *Interested in a similar analysis for your business?*
-*[Connect on LinkedIn](your-linkedin-url) or 
+*[Connect on LinkedIn](www.linkedin.com/in/natnael-birhanu-9647b7363) or 
 [view my portfolio](your-portfolio-url)*
 
 # CRM Sales Analytics Dashboard
