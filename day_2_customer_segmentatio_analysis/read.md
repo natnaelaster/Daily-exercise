@@ -159,6 +159,7 @@ https://public.tableau.com/app/profile/natnael.birhanu/viz/day_2_customer_segmen
 
 ---
 
-## 📬 Let's Connect
+📬 Let's Connect
+If you're interested in data analytics, dashboard development, or business intelligence solutions, feel free to connect with me on LinkedIn or explore more projects in my portfolio.
 
-If you're interested in customer analytics, segmentation, business intelligence, or data-driven marketing solutions, feel free to connect with me on LinkedIn or explore more projects in my portfolio.
+Connect on LinkedIn or view my portfolio
