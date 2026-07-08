@@ -160,4 +160,4 @@ https://public.tableau.com/app/profile/natnael.birhanu/viz/day_2_customer_segmen
 ---
 
 *[Connect on LinkedIn](www.linkedin.com/in/natnael-birhanu-9647b7363) or 
-[view my portfolio](your-portfolio-url)*
+[view my portfolio](https://natnaelaster.github.io/natnaelaster.github.io-/)*
