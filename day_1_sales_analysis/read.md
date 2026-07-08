@@ -137,5 +137,5 @@ https://public.tableau.com/views/day_1_sales_dashboard/SalesPerformanceDashboard
 
 If you're interested in data analytics, dashboard development, or business intelligence solutions, feel free to connect with me on LinkedIn or explore more projects in my portfolio.
 
-*[Connect on LinkedIn](your-linkedin-url) or 
+*[Connect on LinkedIn](www.linkedin.com/in/natnael-birhanu-9647b7363) or 
 [view my portfolio](your-portfolio-url)*
