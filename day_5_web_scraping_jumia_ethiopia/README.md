@@ -1,4 +1,4 @@
-# 💻 Web Scraping & Laptop Market Analysis (Jumia Uganda) (Day 5)
+# 💻 Web Scraping & Laptop Market Analysis (Jumia Uganda) (Day_5)
 
 ## Project Overview
 In this project I have demonstrated web scraping techniques to collect real-time laptop pricing data from Jumia Uganda marketplace, followed by comprehensive data cleaning, feature extraction, and market analysis to understand pricing determinants and consumer preferences in the Ugandan laptop market.
