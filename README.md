@@ -1,11 +1,19 @@
 # 📊 Data Analysis Portfolio: Daily Exercise Projects
 
-🚀 **About This Repository**
+🚀 **Hi! This is my Data Analysis Projects Repository**
 
-This repository showcases my journey in data analysis through daily hands-on projects. Each project demonstrates practical application of data science techniques across various domains, from e-commerce analytics to predictive modeling. The projects follow a structured approach: data collection/acquisition, cleaning, exploratory analysis, visualization, and actionable insights.
+In this repository showcases my journey in data analysis through daily hands-on projects. 
+Each project demonstrates practical application of data science techniques across various domains, 
+from e-commerce analytics to predictive modeling. 
+The projects follow a structured approach: 
+data collection/acquisition, 
+cleaning, 
+exploratory analysis, 
+visualization, 
+and actionable insights.
 
 **Portfolio Overview:**
-- **5 Comprehensive Projects** covering web scraping, sales analysis, customer segmentation, inventory optimization, and predictive modeling
+- **Comprehensive Projects** covering web scraping, sales analysis, customer segmentation, inventory optimization,predictive modeling and Sales kpi tarcking
 - **Technologies Used:** Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn), SQL, Tableau, BeautifulSoup
 - **Total Datasets Processed:** 400,000+ records across multiple domains
 - **Key Skills Demonstrated:** Data cleaning, statistical analysis, machine learning, business intelligence
@@ -36,6 +44,7 @@ This repository showcases my journey in data analysis through daily hands-on pro
 
 **Visualization & BI:**
 - **Tableau:** Interactive dashboards, advanced visualizations
+- **Power BI** An alternative for data visualization
 - **Matplotlib/Seaborn:** Statistical plots, distribution analysis
 
 **Data Engineering:**
@@ -74,13 +83,12 @@ This repository showcases my journey in data analysis through daily hands-on pro
 
 ---
 
-## 📞 Contact & Portfolio Links
+## 📞 Let's connect and for insightfull analytical journy 
 
 **Email:** natnaelaster42@gmail.com  
 **LinkedIn:** https://www.linkedin.com/in/natnael-birhanu-9647b7363/  
 **GitHub:** https://github.com/natnaelaster  
 **Tableau Public:** https://public.tableau.com/app/profile/natnael.birhanu/vizzes
-
 **Live Portfolio:** https://natnaelaster.github.io/natnaelaster.github.io-/
 
 ---
