@@ -128,7 +128,7 @@ https://public.tableau.com/views/day_1_sales_dashboard/SalesPerformanceDashboard
 
 * **Project Type:** Sales Analytics Dashboard
 * **Tools:** Python + Tableau
-* **Duration:** Approximately 6 hours
+* **Duration:** 3 days
 * **Primary Challenge:** Resolving date formatting issues in Tableau while ensuring accurate monthly trend analysis.
 
 ---
