@@ -110,11 +110,12 @@ Five CSV files from HubSpot CRM:
 - `data_dictionary.csv` — column definitions
 
 ---
+# CRM Sales Analytics Dashboard
+
+<img src="Screenshot (11).png" width="900">
+
 
 *Interested in a similar analysis for your business?*
 *[Connect on LinkedIn](www.linkedin.com/in/natnael-birhanu-9647b7363) or 
 [view my portfolio](https://natnaelaster.github.io/natnaelaster.github.io-/)*
 
-# CRM Sales Analytics Dashboard
-
-![Dashboard] <img src="Screenshot (11).png" width="900">
