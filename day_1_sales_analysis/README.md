@@ -1,5 +1,5 @@
 **DAY 1 SUBMISSION** 
-
+<h6>
 # 📊 E-commerce Sales Dashboard
 
 **Python · Tableau | Sales Performance & Business Intelligence**
@@ -133,7 +133,7 @@ https://public.tableau.com/views/day_1_sales_dashboard/SalesPerformanceDashboard
 
 ---
 
-## 📬 Let's Connect
+## 📬 Let's Connect </h6>
 
 If you're interested in data analytics, dashboard development, or business intelligence solutions, feel free to connect with me on LinkedIn or explore more projects in my portfolio.
 
